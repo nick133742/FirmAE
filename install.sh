@@ -11,7 +11,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # postgresql
-sudo apt install -y postgresql
+udo apt install -y postgresql-14
 sudo /etc/init.d/postgresql restart
 sudo -u postgres bash -c "psql -c \"CREATE USER firmadyne WITH PASSWORD 'firmadyne';\""
 sudo -u postgres createdb -O firmadyne firmware
